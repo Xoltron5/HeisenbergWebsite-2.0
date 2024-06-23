@@ -1,10 +1,74 @@
 :root {
     --primary-color: #1A1A1A;
     --secondary-color: #F5F5F5;
-    --font-size: 16px;
+    --accent-color-1: #41D890;
+    --font-size: 32px;
     --padding: 10px;
+
+    /* navbar */
+    --navbar-buttons-padding: 5px;
+    --navbar-gap: 3em;
+    --navbar-special-links-border-radius: 5px;
 }
 
 body {
     background-color: var(--primary-color);
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    border: 2px solid green;
+    justify-content: center;
+}
+
+.logo {
+    border: 2px solid red;
+}
+
+.logo-container {
+    display: flex;
+    margin-right: var(--navbar-gap);
+    align-items: center;
+    border: 2px solid turquoise;
+}
+
+.logo-container .website-name {
+    font-size: var(--font-size);
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+
+.navbar { 
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--navbar-gap);
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--secondary-color);
+    transition: color 300ms ease;
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.navbar a:hover:not(.special-link) {
+    color: var(--accent-color-1);
+}
+
+#signup {
+    background-color: var(--accent-color-1);
+    border-radius: var(--navbar-special-links-border-radius);
+    padding: var(--navbar-buttons-padding);
+}
+
+#login {
+    border: 3px solid var(--accent-color-1);
+    border-radius: var(--navbar-special-links-border-radius);
+    padding: var(--navbar-buttons-padding);
 }
