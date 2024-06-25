@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #1A1A1A;
+    --secondary-color: #F5F5F5;
+    --accent-color-1: #41D890;
+    --accent-color-2: #B7B4B4;
+    --accent-color-3: #131313;
+    --font-size: 2rem;
+    --buttons-padding: 10px;
+    --border-radius: 10px;
+
+    --gap: 2rem;
+
+    /* top section */
+    --header-text-size: 48px;
+}
+
+.products-listing-header {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 30%;
+}
+
+.search-input {
+    background-color: var(--accent-color-3);
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding: 15px;
+}
+
+.search-container-filters {
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.search-container-filters h5 {
+    background-color: var(--accent-color-3);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.product-listing-header {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+    margin-top: 100px;
+}
+
+.product-listing {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.product-listing-item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 1;
+    grid-template-areas: 
+    "product-listing-image"
+    "product-listing-details";
+}
+
+.product-listing-image {
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color-3);
+    grid-area: product-listing-image;
+    p {
+        color: var(--secondary-color);
+        text-align: center;
+        font-size: 5em;
+    }
+    margin-bottom: 10px;
+}
+
+.product-listing-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: product-listing-details;    
+}
+
+.product-listing-details-text {
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
