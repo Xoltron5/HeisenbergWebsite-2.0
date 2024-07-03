@@ -31,6 +31,11 @@
     align-items: center;
     padding: 5px;
     width: 30%;
+    max-width: 600px;
+}
+
+.search-bar-container input {
+    font-size: 1.25rem;
 }
 
 .search-input {
@@ -39,6 +44,7 @@
     color: var(--secondary-color);
     border-radius: 10px;
     width: 100%;
+    max-width: 600px;
     border: none;
     padding: 15px;
 }
@@ -69,7 +75,7 @@ input:focus {
 
 .product-listing {
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 2rem;

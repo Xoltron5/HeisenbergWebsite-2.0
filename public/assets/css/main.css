@@ -1,4 +1,7 @@
 @import url("shop.css");
+@import url("wishlist.css");
+@import url("contact.css");
+@import url("signup&login.css");
 
 :root {
     --primary-color: #1A1A1A;
@@ -110,6 +113,7 @@ body {
 .facts {
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
@@ -126,15 +130,16 @@ body {
 .item-showcase {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: var(--gap);
     margin-top: 50px;
 }
 
 .item-showcased {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 500px;
     background-color: var(--accent-color-3);
-    width: 25%;
     border-radius: 30px;
     padding: 10px;
     p {
@@ -155,7 +160,7 @@ body {
 
 .special-listing {
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 2rem;
