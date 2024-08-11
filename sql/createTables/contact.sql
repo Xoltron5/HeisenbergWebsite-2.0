@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS contact (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    userId BIGINT,
+    subject TEXT NOT NULL,
+    message TEXT NOT NULL,
+    FOREIGN KEY (userId) REFERENCES user(id)
+);

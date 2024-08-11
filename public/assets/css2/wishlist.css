@@ -1,0 +1,13 @@
+/* General settings */
+:root {
+    --primary-color: #1A1A1A;
+    --secondary-color: #F5F5F5;
+    --accent-color-1: #41D890;
+    --accent-color-2: #B7B4B4;
+    --accent-color-3: #131313;
+    --font-size: 2rem;
+    --buttons-padding: 10px;
+    --border-radius: 10px;
+    --gap: 2rem;
+    --header-text-size: 48px;
+}

@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS user (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(30) NOT NULL,
+    email TEXT NOT NULL, 
+    dateOfBirth DATE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role TEXT NOT NULL,
+    dateJoined DATETIME NOT NULL,
+    sessionCookie DATETIME NOT NULL
+);

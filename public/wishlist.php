@@ -9,12 +9,12 @@
 <body>
     <div class="header">
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
+            <a href="index.php">Home</a>
+            <a href="shop.php">Shop</a>
             <a href="#">Wishlist</a>
-            <a href="contact.html">Contact</a>
-            <a href="signup.html" class = "special-link" id="signup">Signup</a>
-            <a href="login.html" class = "special-link" id="login">Login</a>
+            <a href="contact.php">Contact</a>
+            <a href="signup.php" class = "special-link" id="signup">Signup</a>
+            <a href="login.php" class = "special-link" id="login">Login</a>
         </div>
     </div>
 

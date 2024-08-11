@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS review (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    userId BIGINT,
+    productId BIGINT,
+    comment TEXT NOT NULL,
+    datePosted DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES user(id),
+    FOREIGN KEY (productId) REFERENCES product(id)
+);
